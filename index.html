@@ -18,63 +18,49 @@
       overflow-x: hidden;
     }
 
-    h1 {
-      margin-top: 40px;
-      font-size: 2em;
-    }
-
     .game {
-      margin: 60px auto;
+      margin: 40px auto;
       max-width: 100%;
     }
 
     .game h2 {
       margin-bottom: 10px;
-      font-size: 1.4em;
+      font-size: 1.2em;
     }
 
-    .description {
-      margin-top: 10px;
-      font-size: 0.95em;
-      color: #ccc;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
+    .iframe-container {
+      width: 576px;
+      height: 512px;
+      margin: 0 auto;
+      overflow: hidden;
     }
-.iframe-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 
-iframe {
-  width: 576px;
-  height: 512px;
-  border: none;
-}
+    iframe {
+      width: 1000px; /* специально больше, чтобы вместить даже кривой контент */
+      height: 800px;
+      border: none;
+      transform: scale(0.9); /* можно подогнать под нужный размер */
+      transform-origin: top left;
+    }
   </style>
 </head>
 <body>
-  <h1>Banzai Pico-8 Jam</h1>
+  <h1>PICO-8 JAM — Финалисты</h1>
 
-<div class="game">
-  <h2>The Last Straw</h2>
-  <div class="iframe-container">
-    <iframe src="the_last_straw/the_last_straw.html" loading="lazy"></iframe>
+  <div class="game">
+    <h2>🐀 Rat Escape</h2>
+    <div class="iframe-container">
+      <iframe src="the_last_straw/the_last_straw.html" loading="lazy"></iframe>
+    </div>
+    <p class="description">История о последнем шансе и одной странной встрече в поле. Прыгай, уклоняйся, спасайся!</p>
   </div>
-  <p class="description">История о последнем шансе и одной странной встрече в поле. Прыгай, уклоняйся, спасайся!</p>
-</div>
 
-
-<div class="game">
-  <h2>The Last Straw</h2>
-  <div class="iframe-container">
-    <iframe src="the_last_straw/the_last_straw.html" loading="lazy"></iframe>
+  <div class="game">
+    <h2>🌙 Dream Loop</h2>
+    <div class="iframe-container">
+      <iframe src="games/dream_loop/game.html" loading="lazy"></iframe>
+    </div>
   </div>
-  <p class="description">История о последнем шансе и одной странной встрече в поле. Прыгай, уклоняйся, спасайся!</p>
-</div>
 
-
-  <!-- Добавляй больше игр по шаблону -->
 </body>
 </html>
