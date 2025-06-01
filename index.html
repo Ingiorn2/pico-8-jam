@@ -41,42 +41,39 @@
       margin-left: auto;
       margin-right: auto;
     }
+.iframe-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
-    .iframe-container {
-      width: 576px;
-      height: 512px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-    }
-
-    iframe {
+iframe {
   width: 576px;
   height: 512px;
   border: none;
-  display: block;
-  margin: 0 auto;
-    }
+}
   </style>
 </head>
 <body>
   <h1>Banzai Pico-8 Jam</h1>
 
-  <div class="game">
-    <h2>The Last Straw</h2>
+<div class="game">
+  <h2>The Last Straw</h2>
+  <div class="iframe-container">
     <iframe src="the_last_straw/the_last_straw.html" loading="lazy"></iframe>
-    <p class="description">История о последнем шансе...</p>
   </div>
+  <p class="description">История о последнем шансе и одной странной встрече в поле. Прыгай, уклоняйся, спасайся!</p>
+</div>
 
-  <div class="game">
-    <h2>🌙 Dream Loop</h2>
-    <div class="iframe-container">
-      <iframe src="games/dream_loop/game.html" loading="lazy"></iframe>
-    </div>
-    <p class="description">
-      Застрял во сне? Попробуй выбраться, пока он не зациклился навсегда. Минималистичный платформер-головоломка.
-    </p>
+
+<div class="game">
+  <h2>The Last Straw</h2>
+  <div class="iframe-container">
+    <iframe src="the_last_straw/the_last_straw.html" loading="lazy"></iframe>
   </div>
+  <p class="description">История о последнем шансе и одной странной встрече в поле. Прыгай, уклоняйся, спасайся!</p>
+</div>
+
 
   <!-- Добавляй больше игр по шаблону -->
 </body>
