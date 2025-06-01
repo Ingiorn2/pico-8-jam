@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Banzai PICO-8 JAM</title>
+  <title>PICO-8 JAM — Финалисты</title>
   <style>
     * {
       box-sizing: border-box;
@@ -15,18 +15,12 @@
       background: #111;
       color: #fff;
       text-align: center;
-      /*overflow-x: hidden;*/
-    }
-
-    h1 {
-      margin: 40px 20px 20px;
-      font-size: 2em;
+      overflow-x: hidden;
     }
 
     .game {
       margin: 40px auto;
       max-width: 100%;
-      /*overflow: hidden; /* <--- добавлено */
     }
 
     .game h2 {
@@ -34,12 +28,19 @@
       font-size: 1.2em;
     }
 
-    .game iframe {
-      width: 700px;
-      height: 700px;
-      border: 2px solid #444;
-      display: block;
+    .iframe-container {
+      width: 576px;
+      height: 512px;
       margin: 0 auto;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 1000px; /* специально больше, чтобы вместить даже кривой контент */
+      height: 800px;
+      border: none;
+      transform: scale(0.9); /* можно подогнать под нужный размер */
+      transform-origin: top left;
     }
   </style>
 </head>
