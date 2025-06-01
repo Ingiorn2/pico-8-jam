@@ -4,9 +4,33 @@
   <meta charset="UTF-8">
   <title>PICO-8 JAM — Финалисты</title>
   <style>
+    body::before,
+    body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 96px; /* ширина картинки */
+  background-repeat: repeat-y;
+  background-size: contain;
+  z-index: -1;
+  opacity: 0.5; /* чтобы не отвлекали */
+}
+
+body::before {
+  left: 0;
+  background-image: url('images/left.png'); /* путь к левой картинке */
+}
+
+body::after {
+  right: 0;
+  background-image: url('images/right.png'); /* путь к правой картинке */
+}
+    
     * {
       box-sizing: border-box;
     }
+    
 
     body {
       margin: 0;
