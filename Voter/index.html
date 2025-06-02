@@ -6,6 +6,39 @@
     <title>Unity WebGL Player | Voting BGJ8</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  #unity-container {
+    position: relative !important;
+    width: 960px !important;
+    height: 600px !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+  }
+
+  #unity-canvas {
+    width: 960px !important;
+    height: 600px !important;
+    display: block;
+    background: #231F20;
+  }
+
+  #unity-footer {
+    display: none;
+  }
+
+  #unity-warning {
+    z-index: 10;
+  }
+</style>
+
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
