@@ -5,6 +5,29 @@
   <meta charset="UTF-8">
   <title>PICO-8 JAM</title>
   <style>
+
+    #vote-button {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 20px;
+  padding: 20px 40px;
+  margin: 40px auto;
+  background-color: #ff9900;
+  color: black;
+  border: 3px solid #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: block;
+  box-shadow: 0 0 8px #ff9900;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+#vote-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #ffaa33;
+}
+
+    
     body::before,
     body::after {
   content: "";
@@ -257,7 +280,7 @@ Z - тыкать реплику<br>
   </div>
   <h1>--------</h1>
   <h1>Голосование:</h1>
-  <button onclick="startVoting()" style="font-size: 1.2em; padding: 10px 20px; margin: 20px;">Голосование</button>
+  <button id="vote-button" onclick="startVoting()">Голосование</button>
 
 <div id="voting-container" style="display: none; margin: 0 auto; max-width: 3000px;">
   <iframe src="Voter/index.html"
