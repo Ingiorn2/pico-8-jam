@@ -299,6 +299,10 @@ Z - тыкать реплику<br>
 <script>
   function startVoting() {
     document.getElementById("voting-container").style.display = "block";
+      window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth'
+    });
   }
 </script>
 </body>
